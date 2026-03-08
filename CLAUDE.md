@@ -2,7 +2,7 @@
 
 ## プロジェクト概要
 漫画制作サービス「FOMUS Creative Studio」のランディングページ。
-プラットフォーム名は「MangaX」（mangax.fomusglobal.com）。
+プラットフォーム名は「MangaX」（creative-manga.fomusglobal.com）。
 
 ## ファイル構成
 ```
@@ -68,7 +68,7 @@ mangax-site/
 ## よく使うリンク
 - 資料請求フォーム: `#contact`（フォームURLに差し替え予定）
 - オプション: `options.html`
-- MangaX: `https://mangax.fomusglobal.com`
+- MangaX: `https://creative-manga.fomusglobal.com`
 
 ## 今後の作業メモ
 - [x] まっすーの写真を `massu.jpg` として追加 → `<img>` に差し替え済み
