@@ -1,7 +1,7 @@
-# MangaX — FOMUS Creative Studio LP
+# MangaX — FOMUS Manga Studio LP
 
 ## プロジェクト概要
-漫画制作サービス「FOMUS Creative Studio」のランディングページ。
+漫画制作サービス「FOMUS Manga Studio」のランディングページ。
 プラットフォーム名は「MangaX」（creative-manga.fomusglobal.com）。
 
 ## ファイル構成
