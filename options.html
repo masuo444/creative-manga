@@ -182,6 +182,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 56px;height:72px;d
 .oi:hover{background:rgba(232,0,106,.03);}
 .oi-name{color:var(--dim);}
 .oi-price{font-family:var(--mono);font-size:13px;color:var(--white);white-space:nowrap;margin-left:16px;}
+.oi-note{font-size:11px;color:var(--dimmer);padding:12px 0 0;line-height:1.7;}
+.ps-note{font-size:15px;color:var(--dim);margin-bottom:32px;line-height:1.9;}
+.ps-sub{font-size:12px;color:var(--dimmer);margin-top:20px;}
 
 /* CTA */
 .cta-wrap{
@@ -277,18 +280,21 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
 <!-- PAGE SIZE -->
 <div class="page-size rv">
   <div class="ps-label">ページ数別 料金</div>
+  <p class="ps-note">5ページ = ¥50,000 を基本単位として、必要なページ数で算出します。</p>
   <table class="ps-table">
     <thead>
       <tr><th>ページ数</th><th>個人</th><th>法人</th></tr>
     </thead>
     <tbody>
-      <tr><td>6 pages</td><td class="ps-ind">¥68,000</td><td class="ps-biz">¥108,000</td></tr>
+      <tr><td>5 pages</td><td class="ps-ind">¥50,000</td><td class="ps-biz">¥80,000</td></tr>
       <tr class="pop"><td>10 pages<span class="ps-pop-tag">Standard</span></td><td class="ps-ind">¥98,000</td><td class="ps-biz">¥148,000</td></tr>
-      <tr><td>16 pages</td><td class="ps-ind">¥138,000</td><td class="ps-biz">¥198,000</td></tr>
-      <tr><td>20 pages</td><td class="ps-ind">¥168,000</td><td class="ps-biz">¥248,000</td></tr>
-      <tr><td>30 pages</td><td class="ps-ind">¥228,000</td><td class="ps-biz">¥348,000</td></tr>
+      <tr><td>15 pages</td><td class="ps-ind">¥145,000</td><td class="ps-biz">¥215,000</td></tr>
+      <tr><td>20 pages</td><td class="ps-ind">¥190,000</td><td class="ps-biz">¥280,000</td></tr>
+      <tr><td>25 pages</td><td class="ps-ind">¥235,000</td><td class="ps-biz">¥345,000</td></tr>
+      <tr><td>30 pages</td><td class="ps-ind">¥280,000</td><td class="ps-biz">¥410,000</td></tr>
     </tbody>
   </table>
+  <p class="ps-sub">※ 上記以外のページ数も5ページ単位で対応可能です。お気軽にご相談ください。</p>
 </div>
 
 <!-- OPTIONS -->
@@ -313,33 +319,17 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
     </div>
     <div class="og">
       <div class="og-title">🖨 印刷・製本</div>
-      <div class="oi"><span class="oi-name">製本A5・中綴じ（30冊）</span><span class="oi-price">¥15,000</span></div>
-      <div class="oi"><span class="oi-name">製本A4・無線綴じ（30冊）</span><span class="oi-price">¥25,000</span></div>
-      <div class="oi"><span class="oi-name">増刷（50冊単位）</span><span class="oi-price">¥8,000〜</span></div>
-      <div class="oi"><span class="oi-name">A1ポスター（3枚）</span><span class="oi-price">¥12,000</span></div>
-      <div class="oi"><span class="oi-name">名刺カード（100枚）</span><span class="oi-price">¥8,000</span></div>
-    </div>
-    <div class="og">
-      <div class="og-title">📱 デジタル展開</div>
-      <div class="oi"><span class="oi-name">SNS最適化パック</span><span class="oi-price">¥20,000</span></div>
-      <div class="oi"><span class="oi-name">縦スクロール変換</span><span class="oi-price">¥15,000</span></div>
-      <div class="oi"><span class="oi-name">電子書籍（EPUB）形式</span><span class="oi-price">¥20,000</span></div>
-      <div class="oi"><span class="oi-name">Reels・TikTok用動画</span><span class="oi-price">¥25,000</span></div>
-      <div class="oi"><span class="oi-name">デジタルサイネージ変換</span><span class="oi-price">¥15,000</span></div>
+      <div class="oi"><span class="oi-name">冊子印刷・中綴じ（30部）</span><span class="oi-price">¥18,000</span></div>
+      <div class="oi"><span class="oi-name">冊子印刷・無線綴じ（100部）</span><span class="oi-price">¥36,000</span></div>
+      <div class="oi"><span class="oi-name">ポスター A3（10枚）</span><span class="oi-price">¥7,000</span></div>
+      <div class="oi"><span class="oi-name">名刺・カード（100枚）</span><span class="oi-price">¥3,500</span></div>
+      <div class="oi-note">※ 入稿データ作成・校正込み。部数変更も対応可能です。</div>
     </div>
     <div class="og">
       <div class="og-title">🔄 定期・継続</div>
       <div class="oi"><span class="oi-name">月次制作（月1本）</span><span class="oi-price">¥80,000/月</span></div>
       <div class="oi"><span class="oi-name">年間契約（年12本）</span><span class="oi-price">¥800,000/年</span></div>
       <div class="oi"><span class="oi-name">シリーズ制作（3話連作）</span><span class="oi-price">¥250,000</span></div>
-    </div>
-    <div class="og">
-      <div class="og-title">📋 サポート</div>
-      <div class="oi"><span class="oi-name">補助金申請書類一式</span><span class="oi-price">¥15,000</span></div>
-      <div class="oi"><span class="oi-name">特急対応（1週間以内）</span><span class="oi-price">¥30,000</span></div>
-      <div class="oi"><span class="oi-name">原稿データ（PSD/AI）納品</span><span class="oi-price">¥20,000</span></div>
-      <div class="oi"><span class="oi-name">商業利用許諾書発行</span><span class="oi-price">¥10,000</span></div>
-      <div class="oi"><span class="oi-name">追加修正（1回）</span><span class="oi-price">¥10,000</span></div>
     </div>
   </div>
 </div>
