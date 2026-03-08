@@ -183,9 +183,23 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 56px;height:72px;d
 .oi-name{color:var(--dim);}
 .oi-price{font-family:var(--mono);font-size:13px;color:var(--white);white-space:nowrap;margin-left:16px;}
 .oi-note{font-size:11px;color:var(--dimmer);padding:12px 0 0;line-height:1.7;}
-.og-wide{grid-column:1 / -1;}
-.plan-table{margin-top:16px;}
-.plan-table td:first-child{font-size:14px;font-weight:700;}
+.og-wide{grid-column:1 / -1;padding:0;background:none;border:none;}
+.plan-lead{font-size:14px;color:var(--dim);line-height:2;margin-bottom:28px;}
+.plan-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.plan-card{background:var(--panel);border:1px solid var(--border);padding:36px 28px;position:relative;transition:border-color .3s;}
+.plan-card:hover{border-color:rgba(232,0,106,.2);}
+.plan-card-pop{border-color:rgba(232,0,106,.35);background:linear-gradient(155deg,rgba(232,0,106,.06),var(--panel) 60%);}
+.plan-badge{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--magenta);font-family:var(--mono);font-size:9px;letter-spacing:1px;padding:5px 16px;color:var(--void);white-space:nowrap;font-weight:700;}
+.plan-name{font-family:var(--display);font-size:24px;letter-spacing:2px;color:var(--white);margin-bottom:12px;}
+.plan-price{font-family:var(--display);font-size:40px;color:var(--magenta);line-height:1;margin-bottom:6px;}
+.plan-price span{font-size:14px;color:var(--dim);letter-spacing:0;}
+.plan-unit{font-family:var(--mono);font-size:12px;color:var(--cyan);margin-bottom:16px;}
+.plan-desc{font-size:13px;color:var(--dim);line-height:1.9;margin-bottom:20px;}
+.plan-perks{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.plan-perks li{font-size:12px;color:var(--dim);padding-left:16px;position:relative;}
+.plan-perks li::before{content:'';position:absolute;left:0;top:7px;width:6px;height:6px;background:var(--cyan);border-radius:50%;box-shadow:0 0 6px var(--cyan);}
+@media(max-width:1024px){.plan-cards{grid-template-columns:1fr;}}
+@media(max-width:600px){.plan-card{padding:28px 20px;}.plan-price{font-size:32px;}}
 .ps-note{font-size:15px;color:var(--dim);margin-bottom:32px;line-height:1.9;}
 .ps-sub{font-size:12px;color:var(--dimmer);margin-top:20px;}
 
@@ -321,18 +335,43 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
       <div class="oi-note">※ 入稿データ作成・校正込み。部数変更も対応可能です。</div>
     </div>
     <div class="og og-wide">
-      <div class="og-title">🔄 定期・継続プラン</div>
-      <table class="ps-table plan-table">
-        <thead>
-          <tr><th>プラン</th><th>内容</th><th>料金</th><th>1本あたり</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>月次制作</td><td>毎月1本（10P）を継続制作</td><td class="ps-biz">¥80,000/月</td><td class="ps-ind">¥80,000</td></tr>
-          <tr class="pop"><td>年間契約<span class="ps-pop-tag">お得</span></td><td>年12本まとめて契約</td><td class="ps-biz">¥800,000/年</td><td class="ps-ind">約¥66,700</td></tr>
-          <tr><td>シリーズ制作</td><td>3話連作（ストーリー連続）</td><td class="ps-biz">¥250,000</td><td class="ps-ind">約¥83,300</td></tr>
-        </tbody>
-      </table>
-      <div class="oi-note">※ 年間契約は月次制作より1本あたり約17%お得です。</div>
+      <div class="og-title">🔄 継続プラン — 漫画を「資産」にする</div>
+      <p class="plan-lead">1本で終わらせるのはもったいない。定期的に漫画を発信する企業は、SNSのエンゲージメントも採用力も伸び続けます。</p>
+      <div class="plan-cards">
+        <div class="plan-card">
+          <div class="plan-name">月次制作</div>
+          <div class="plan-price">¥80,000<span>/月</span></div>
+          <div class="plan-desc">毎月1本（10P）を継続制作。採用・広報・社内報など、用途を変えながらコンテンツを積み上げ。</div>
+          <ul class="plan-perks">
+            <li>専属ディレクターが担当</li>
+            <li>毎月のヒアリング込み</li>
+            <li>MangaX掲載 + データ納品</li>
+          </ul>
+        </div>
+        <div class="plan-card plan-card-pop">
+          <div class="plan-badge">年間で約16万円お得</div>
+          <div class="plan-name">年間契約</div>
+          <div class="plan-price">¥800,000<span>/年（12本）</span></div>
+          <div class="plan-unit">1本あたり 約¥66,700</div>
+          <div class="plan-desc">12本を年間で計画的に制作。採用シーズン・展示会・新商品発表に合わせたスケジュールを一緒に設計します。</div>
+          <ul class="plan-perks">
+            <li>月次プランの全特典</li>
+            <li>年間コンテンツ戦略を設計</li>
+            <li>優先スケジュール確保</li>
+            <li>補助金申請サポート無料</li>
+          </ul>
+        </div>
+        <div class="plan-card">
+          <div class="plan-name">シリーズ制作</div>
+          <div class="plan-price">¥250,000<span>（3話）</span></div>
+          <div class="plan-desc">ストーリーが続く3話連作。商品の開発秘話、創業ストーリー、連載型の採用コンテンツに。</div>
+          <ul class="plan-perks">
+            <li>全3話の構成・脚本設計</li>
+            <li>キャラクター統一</li>
+            <li>「続きが読みたい」を生む構成</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
