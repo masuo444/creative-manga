@@ -135,27 +135,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 56px;height:72px;d
 .ps-label{font-family:var(--mono);font-size:9px;letter-spacing:7px;text-transform:uppercase;color:var(--magenta);margin-bottom:44px;display:flex;align-items:center;gap:10px;}
 .ps-label::before{content:'[';color:var(--dimmer);}
 .ps-label::after{content:']';color:var(--dimmer);}
-.ps-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;}
-.ps-c{
-  background:var(--panel);border:1px solid var(--border);
-  padding:36px 20px;text-align:center;
-  transition:border-color .3s,background .3s,transform .3s;
-  position:relative;
-}
-.ps-c:hover{background:rgba(240,238,248,.025);border-color:rgba(232,0,106,.18);transform:translateY(-4px);}
-.ps-c.pop{border-color:rgba(232,0,106,.35);background:linear-gradient(155deg,rgba(232,0,106,.08),var(--panel) 60%);}
-.pop-tag{
-  position:absolute;top:-1px;left:50%;transform:translateX(-50%);
-  background:var(--magenta);font-family:var(--mono);font-size:8px;
-  letter-spacing:2px;text-transform:uppercase;padding:4px 14px;
-  white-space:nowrap;color:var(--void);
-}
-.ps-pg{font-family:var(--display);font-size:60px;line-height:1;color:var(--white);}
-.ps-c.pop .ps-pg{color:var(--magenta);text-shadow:0 0 40px rgba(232,0,106,.3);}
-.ps-unit{font-family:var(--mono);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--dimmer);margin-bottom:18px;}
-.ps-ind{font-family:var(--mono);font-size:14px;color:var(--white);margin-bottom:4px;}
-.ps-biz{font-family:var(--mono);font-size:14px;color:var(--cyan);}
-.ps-lbl{font-size:9px;color:var(--dimmer);margin-top:8px;font-family:var(--mono);letter-spacing:1px;}
+.ps-table{width:100%;border-collapse:collapse;}
+.ps-table th{font-family:var(--mono);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--dimmer);padding:14px 20px;text-align:left;border-bottom:1px solid var(--border);font-weight:400;}
+.ps-table th:not(:first-child){text-align:right;}
+.ps-table td{padding:18px 20px;border-bottom:1px solid rgba(240,238,248,.04);font-size:14px;color:var(--dim);}
+.ps-table td:first-child{font-family:var(--display);font-size:28px;color:var(--white);letter-spacing:1px;}
+.ps-table td:not(:first-child){text-align:right;font-family:var(--mono);font-size:14px;}
+.ps-table td.ps-ind{color:var(--white);}
+.ps-table td.ps-biz{color:var(--cyan);}
+.ps-table tr:hover td{background:rgba(240,238,248,.02);}
+.ps-table tr.pop td{background:rgba(232,0,106,.04);}
+.ps-table tr.pop td:first-child{color:var(--magenta);text-shadow:0 0 30px rgba(232,0,106,.2);}
+.ps-pop-tag{font-family:var(--mono);font-size:8px;letter-spacing:2px;text-transform:uppercase;background:var(--magenta);color:var(--void);padding:3px 8px;margin-left:10px;vertical-align:middle;}
 
 /* OPTIONS GRID */
 .options-wrap{padding:100px 56px 140px;}
@@ -254,7 +245,10 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
   .foot-top{grid-template-columns:1fr;gap:36px;}
 }
 @media(max-width:600px){
-  .ps-grid,.opt-grid{grid-template-columns:1fr;}
+  .opt-grid{grid-template-columns:1fr;}
+  .ps-table th,.ps-table td{padding:14px 12px;font-size:12px;}
+  .ps-table td:first-child{font-size:22px;}
+  .ps-pop-tag{font-size:7px;padding:2px 6px;margin-left:6px;}
 }
 </style>
 </head>
@@ -283,49 +277,18 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
 <!-- PAGE SIZE -->
 <div class="page-size rv">
   <div class="ps-label">ページ数別 料金</div>
-  <div class="ps-grid">
-    <div class="ps-c">
-      <div class="ps-pg">6</div>
-      <div class="ps-unit">pages</div>
-      <div class="ps-ind">¥68,000</div>
-      <div class="ps-lbl">個人</div>
-      <div class="ps-biz">¥108,000</div>
-      <div class="ps-lbl">法人</div>
-    </div>
-    <div class="ps-c pop">
-      <div class="pop-tag">Standard</div>
-      <div class="ps-pg">10</div>
-      <div class="ps-unit">pages</div>
-      <div class="ps-ind">¥98,000</div>
-      <div class="ps-lbl">個人</div>
-      <div class="ps-biz">¥148,000</div>
-      <div class="ps-lbl">法人</div>
-    </div>
-    <div class="ps-c">
-      <div class="ps-pg">16</div>
-      <div class="ps-unit">pages</div>
-      <div class="ps-ind">¥138,000</div>
-      <div class="ps-lbl">個人</div>
-      <div class="ps-biz">¥198,000</div>
-      <div class="ps-lbl">法人</div>
-    </div>
-    <div class="ps-c">
-      <div class="ps-pg">20</div>
-      <div class="ps-unit">pages</div>
-      <div class="ps-ind">¥168,000</div>
-      <div class="ps-lbl">個人</div>
-      <div class="ps-biz">¥248,000</div>
-      <div class="ps-lbl">法人</div>
-    </div>
-    <div class="ps-c">
-      <div class="ps-pg">30</div>
-      <div class="ps-unit">pages</div>
-      <div class="ps-ind">¥228,000</div>
-      <div class="ps-lbl">個人</div>
-      <div class="ps-biz">¥348,000</div>
-      <div class="ps-lbl">法人</div>
-    </div>
-  </div>
+  <table class="ps-table">
+    <thead>
+      <tr><th>ページ数</th><th>個人</th><th>法人</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>6 pages</td><td class="ps-ind">¥68,000</td><td class="ps-biz">¥108,000</td></tr>
+      <tr class="pop"><td>10 pages<span class="ps-pop-tag">Standard</span></td><td class="ps-ind">¥98,000</td><td class="ps-biz">¥148,000</td></tr>
+      <tr><td>16 pages</td><td class="ps-ind">¥138,000</td><td class="ps-biz">¥198,000</td></tr>
+      <tr><td>20 pages</td><td class="ps-ind">¥168,000</td><td class="ps-biz">¥248,000</td></tr>
+      <tr><td>30 pages</td><td class="ps-ind">¥228,000</td><td class="ps-biz">¥348,000</td></tr>
+    </tbody>
+  </table>
 </div>
 
 <!-- OPTIONS -->
