@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mangax.fomusglobal.com/sitemap.xml
