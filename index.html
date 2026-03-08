@@ -1234,8 +1234,11 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
     </ul>
   </div>
   <div class="cta-form">
-    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <!-- TODO: Formspree等のフォームIDを設定 -->
+    <form id="contactForm" action="https://formsubmit.co/contact@fomus.jp" method="POST">
+      <input type="hidden" name="_subject" value="【FOMUS】資料請求がありました">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
       <div class="form-group">
         <label class="form-label">お名前<span class="req">*</span></label>
         <input type="text" name="name" class="form-input" placeholder="山田 太郎" required>
@@ -1385,17 +1388,25 @@ window.addEventListener('scroll',()=>{
   if(!form)return;
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    const data=new FormData(form);
-    fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}})
+    const btn=form.querySelector('.form-submit');
+    btn.textContent='送信中...';
+    btn.disabled=true;
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
     .then(r=>{
-      if(r.ok){
+      if(r.ok||r.status===200||r.redirected){
         form.style.display='none';
         success.classList.add('show');
       } else {
+        btn.textContent='無料で資料請求する';
+        btn.disabled=false;
         alert('送信に失敗しました。お手数ですが、もう一度お試しください。');
       }
     })
-    .catch(()=>alert('送信に失敗しました。通信環境をご確認ください。'));
+    .catch(()=>{
+      btn.textContent='無料で資料請求する';
+      btn.disabled=false;
+      alert('送信に失敗しました。通信環境をご確認ください。');
+    });
   });
 })();
 </script>
