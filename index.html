@@ -204,7 +204,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9990;o
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 56px;height:72px;display:flex;align-items:center;justify-content:space-between;transition:background .3s,backdrop-filter .3s;}
-.logo{font-family:var(--display);font-size:24px;letter-spacing:4px;color:var(--white);text-decoration:none;}
+.logo{font-family:var(--display);font-size:clamp(14px,2.5vw,24px);letter-spacing:3px;color:var(--white);text-decoration:none;white-space:nowrap;}
 .logo-dot{color:var(--magenta);text-shadow:0 0 20px var(--magenta);}
 .nav-links{display:flex;gap:44px;align-items:center;}
 .nav-link{font-family:var(--mono);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);text-decoration:none;transition:color .2s;}
@@ -657,7 +657,7 @@ textarea.form-input{min-height:80px;resize:vertical;}
 .creator{padding:140px 56px;}
 .creator-inner{display:grid;grid-template-columns:420px 1fr;gap:88px;align-items:start;}
 .cr-img-col{position:relative;}
-.cr-photo{width:100%;display:block;filter:grayscale(20%);}
+.cr-photo{width:100%;height:100%;display:block;object-fit:cover;object-position:center top;filter:grayscale(20%);}
 .cr-photo-ph{
   width:100%;aspect-ratio:6/7;
   background:var(--panel);border:1px solid var(--border);
@@ -839,7 +839,7 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
   .proc-step{padding:16px 8px;}
   .creator{padding:60px 20px;}
   .creator-inner{grid-template-columns:1fr;}
-  .cr-photo{max-height:360px;}
+  .cr-photo{}
   .faq{padding:0 20px 60px;}
   .faq-inner{grid-template-columns:1fr;}
   .faq-head{position:static;margin-bottom:32px;}
@@ -906,7 +906,7 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
   .proc-t{font-size:12px;}
   .proc-d{font-size:10px;}
   .creator{padding:48px 16px;}
-  .cr-photo{max-height:300px;}
+  .cr-photo{}
   .cr-title{font-size:clamp(28px,7vw,40px);}
   .cr-lead{font-size:14px;}
   .cr-item-h{font-size:14px;}
@@ -940,7 +940,7 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="index.html" class="logo">FOMUS<span class="logo-dot">.</span>CS</a>
+  <a href="index.html" class="logo">FOMUS<span class="logo-dot">.</span>MANGA STUDIO</a>
   <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
   <div class="mobile-overlay" id="mobileOverlay"></div>
   <div class="nav-links" id="navLinks">
@@ -1224,8 +1224,8 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
 <section class="creator rv">
   <div class="creator-inner">
     <div class="cr-img-col rl">
-      <div style="position:relative;overflow:hidden;">
-        <img src="massu.jpg" class="cr-photo" alt="増尾圭亮（まっすー）— FOMUS Creative Studio 代表・漫画制作ディレクター">
+      <div style="position:relative;overflow:hidden;aspect-ratio:3/4;">
+        <img src="massu.jpg" class="cr-photo" alt="増尾圭亮（まっすー）— FOMUS Manga Studio 代表・漫画制作ディレクター">
         <div class="cr-photo-frame"></div>
         <div class="cr-photo-dot cr-d1"></div>
         <div class="cr-photo-dot cr-d2"></div>
@@ -1398,7 +1398,7 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
 <footer>
   <div class="foot-top">
     <div>
-      <div class="foot-logo">FOMUS<span>.</span>CS</div>
+      <div class="foot-logo">FOMUS<span>.</span>MANGA STUDIO</div>
       <p class="foot-desc">AI × クリエイティブディレクションによる漫画制作サービス。あなたの物語を、世界に届ける作品に。</p>
     </div>
     <div>
