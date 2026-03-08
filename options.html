@@ -183,6 +183,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 56px;height:72px;d
 .oi-name{color:var(--dim);}
 .oi-price{font-family:var(--mono);font-size:13px;color:var(--white);white-space:nowrap;margin-left:16px;}
 .oi-note{font-size:11px;color:var(--dimmer);padding:12px 0 0;line-height:1.7;}
+.og-wide{grid-column:1 / -1;}
+.plan-table{margin-top:16px;}
+.plan-table td:first-child{font-size:14px;font-weight:700;}
 .ps-note{font-size:15px;color:var(--dim);margin-bottom:32px;line-height:1.9;}
 .ps-sub{font-size:12px;color:var(--dimmer);margin-top:20px;}
 
@@ -310,14 +313,6 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
       <div class="oi"><span class="oi-name">ローカライズ（文化適応）</span><span class="oi-price">¥30,000〜</span></div>
     </div>
     <div class="og">
-      <div class="og-title">🎨 クオリティ・スタイル</div>
-      <div class="oi"><span class="oi-name">絵柄スタイル2案比較</span><span class="oi-price">¥20,000</span></div>
-      <div class="oi"><span class="oi-name">オリジナルキャラ制作</span><span class="oi-price">¥30,000</span></div>
-      <div class="oi"><span class="oi-name">追加キャラクター</span><span class="oi-price">¥15,000</span></div>
-      <div class="oi"><span class="oi-name">背景・世界観強化</span><span class="oi-price">¥20,000</span></div>
-      <div class="oi"><span class="oi-name">カバーページ制作</span><span class="oi-price">¥15,000</span></div>
-    </div>
-    <div class="og">
       <div class="og-title">🖨 印刷・製本</div>
       <div class="oi"><span class="oi-name">冊子印刷・中綴じ（30部）</span><span class="oi-price">¥18,000</span></div>
       <div class="oi"><span class="oi-name">冊子印刷・無線綴じ（100部）</span><span class="oi-price">¥36,000</span></div>
@@ -325,11 +320,19 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
       <div class="oi"><span class="oi-name">名刺・カード（100枚）</span><span class="oi-price">¥3,500</span></div>
       <div class="oi-note">※ 入稿データ作成・校正込み。部数変更も対応可能です。</div>
     </div>
-    <div class="og">
-      <div class="og-title">🔄 定期・継続</div>
-      <div class="oi"><span class="oi-name">月次制作（月1本）</span><span class="oi-price">¥80,000/月</span></div>
-      <div class="oi"><span class="oi-name">年間契約（年12本）</span><span class="oi-price">¥800,000/年</span></div>
-      <div class="oi"><span class="oi-name">シリーズ制作（3話連作）</span><span class="oi-price">¥250,000</span></div>
+    <div class="og og-wide">
+      <div class="og-title">🔄 定期・継続プラン</div>
+      <table class="ps-table plan-table">
+        <thead>
+          <tr><th>プラン</th><th>内容</th><th>料金</th><th>1本あたり</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>月次制作</td><td>毎月1本（10P）を継続制作</td><td class="ps-biz">¥80,000/月</td><td class="ps-ind">¥80,000</td></tr>
+          <tr class="pop"><td>年間契約<span class="ps-pop-tag">お得</span></td><td>年12本まとめて契約</td><td class="ps-biz">¥800,000/年</td><td class="ps-ind">約¥66,700</td></tr>
+          <tr><td>シリーズ制作</td><td>3話連作（ストーリー連続）</td><td class="ps-biz">¥250,000</td><td class="ps-ind">約¥83,300</td></tr>
+        </tbody>
+      </table>
+      <div class="oi-note">※ 年間契約は月次制作より1本あたり約17%お得です。</div>
     </div>
   </div>
 </div>
