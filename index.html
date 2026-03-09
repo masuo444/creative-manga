@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="採用漫画・ビジネス漫画・自己紹介漫画の制作代行。AI漫画制作で最短1週間・¥98,000〜。企業漫画の外注なら補助金活用で実質1/3。">
 <meta name="twitter:image" content="https://creative-manga.fomusglobal.com/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100;300;400;700;900&family=Noto+Serif+JP:ital,wght@0,300;0,600;1,300&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;700&family=Noto+Serif+JP:ital,wght@0,300;0,600;1,300&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <!-- 構造化データ: WebPage -->
 <script type="application/ld+json">
 {
@@ -175,6 +175,30 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "文化的背景・読み方向（RTL対応）・色彩感覚まで調整します。単なる翻訳ではなく、現地の感覚で刺さるよう再設計します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "完成した漫画の著作権・使用権はどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "納品後の著作権はお客様に帰属します。Webサイト・SNS・印刷物・展示会など、商用利用も追加料金なしでご自由にお使いいただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "納品されるファイル形式は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "高解像度PNG/JPG（印刷対応300dpi）とPDFを標準納品。オプションでEPUB（電子書籍）、SNS最適化サイズ、縦スクロール形式にも対応しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AIで制作した漫画の品質は大丈夫ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AIはあくまで制作ツールの一部です。最終的な品質はクリエイティブディレクターが絵柄・構図・セリフ・コマ割りすべてに手を入れて仕上げます。AI感のない仕上がりが最大のこだわりです。"
       }
     },
     {
@@ -1439,6 +1463,18 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
         <div class="faq-a">文化的背景・読み方向（RTL対応）・色彩感覚まで調整します。単なる翻訳ではなく、現地の感覚で刺さるよう再設計します。</div>
       </div>
       <div class="faq-item">
+        <div class="faq-q">完成した漫画の著作権・使用権はどうなりますか？</div>
+        <div class="faq-a">納品後の著作権はお客様に帰属します。Webサイト・SNS・印刷物・展示会など、商用利用も追加料金なしでご自由にお使いいただけます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">納品されるファイル形式は？</div>
+        <div class="faq-a">高解像度PNG/JPG（印刷対応300dpi）とPDFを標準納品。オプションでEPUB（電子書籍）、SNS最適化サイズ、縦スクロール形式にも対応しています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">AIで制作した漫画の品質は大丈夫ですか？</div>
+        <div class="faq-a">AIはあくまで制作ツールの一部です。最終的な品質はクリエイティブディレクターが絵柄・構図・セリフ・コマ割りすべてに手を入れて仕上げます。「AI感のない仕上がり」が最大のこだわりです。</div>
+      </div>
+      <div class="faq-item">
         <div class="faq-q">まず資料請求だけでも大丈夫ですか？</div>
         <div class="faq-a">もちろんです。まずは無料の資料請求から。サンプル漫画・料金表・補助金ガイドをお送りします。その上でご相談も可能です。</div>
       </div>
@@ -1463,7 +1499,7 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
   </div>
   <div class="cd-right">
     <div class="cd-msg">この締切を逃すと、<br>次の受付は<strong>半年以上先</strong>になります。</div>
-    <a href="#contact" class="cd-btn">無料で資料請求する</a>
+    <a href="#contact" class="cd-btn">今すぐ見積もりを相談する</a>
   </div>
 </div>
 
@@ -1525,7 +1561,7 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
         <label class="form-label">ご質問・ご要望</label>
         <textarea name="message" class="form-input" placeholder="漫画の用途や気になる点があればお書きください"></textarea>
       </div>
-      <button type="submit" class="form-submit">無料で資料請求する</button>
+      <button type="submit" class="form-submit">サンプル漫画 & 料金表を受け取る</button>
       <p class="form-note">※ 1営業日以内にメールでお届けします。営業電話は一切いたしません。</p>
     </form>
     <div class="form-success" id="formSuccess">
@@ -1644,13 +1680,13 @@ window.addEventListener('scroll',()=>{
         form.style.display='none';
         success.classList.add('show');
       } else {
-        btn.textContent='無料で資料請求する';
+        btn.textContent='サンプル漫画 & 料金表を受け取る';
         btn.disabled=false;
         alert('送信に失敗しました。お手数ですが、もう一度お試しください。');
       }
     })
     .catch(()=>{
-      btn.textContent='無料で資料請求する';
+      btn.textContent='サンプル漫画 & 料金表を受け取る';
       btn.disabled=false;
       alert('送信に失敗しました。通信環境をご確認ください。');
     });
