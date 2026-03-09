@@ -91,24 +91,24 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Story Starter（個人向け）",
+      "name": "Story Starter（制作代行）",
       "price": "98000",
       "priceCurrency": "JPY",
-      "description": "個人・フリーランス向け。ヒアリング60分、漫画10ページ、AI作画＋編集、高解像度データ納品、MangaX掲載"
+      "description": "制作代行。ヒアリング60分、漫画10ページ、絵柄1案、修正1回、MangaX掲載、データ納品"
     },
     {
       "@type": "Offer",
-      "name": "Business Standard（法人向け）",
-      "price": "148000",
+      "name": "Brand Partner（伴走型パートナー・単発）",
+      "price": "198000",
       "priceCurrency": "JPY",
-      "description": "法人向け4/30申込特別価格。ヒアリング90分、漫画10ページ、修正3回、1言語追加、SNS用画像セット、補助金申請書類サポート"
+      "description": "伴走型パートナー。ブランドヒアリング（ストーリー設計込み）、漫画10ページ〜、絵柄3案、修正3回、MangaX掲載、データ納品"
     },
     {
       "@type": "Offer",
-      "name": "Brand Package（大企業向け）",
-      "price": "298000",
+      "name": "Brand Partner Pro（伴走型パートナー・3ヶ月継続）",
+      "price": "500000",
       "priceCurrency": "JPY",
-      "description": "大企業向け。ヒアリング120分＋事前調査、漫画20ページ、絵柄3案提案、2言語込み・修正無制限、展示会用印刷データ"
+      "description": "伴走型パートナー・3ヶ月継続。月次ミーティング、月1本〜制作、ブランド戦略設計、優先スケジュール、MangaX掲載、データ納品。月額50万円〜（3ヶ月〜）"
     }
   ]
 }
@@ -140,7 +140,15 @@
       "name": "途中でイメージが変わった場合は？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "プランに応じた修正回数内で対応します。Business Standard以上は3回まで無料。方向性が大きく変わる場合も、まず相談してください。"
+        "text": "プランに応じた修正回数内で対応します。Brand Partner以上は3回まで無料。方向性が大きく変わる場合も、まず相談してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "プランの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Story Starterは「制作代行」型。内容が決まっている方向けに、ヒアリング＋漫画制作をお届けします。Brand Partnerは「伴走型パートナー」型。何を伝えるかの設計から一緒に行います。Brand Partner Proは3ヶ月の継続契約で、ブランド戦略設計・月次制作を含む企業向けプランです。"
       }
     },
     {
@@ -1218,45 +1226,43 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
 <section class="pricing" id="pricing">
   <div class="price-top rv">
     <div class="sec-label" style="justify-content:center;">Pricing</div>
-    <h2 class="sec-head" style="text-align:center;margin-bottom:32px;">漫画制作の費用・料金——<em>明確な価格で、動きやすく。</em></h2>
-    <div class="deadline-badge"><span class="blink">●</span> 4月30日申込 法人特別価格 受付中</div>
+    <h2 class="sec-head" style="text-align:center;margin-bottom:32px;">制作代行から伴走型パートナーまで。</h2>
   </div>
   <div class="plans rv">
     <div class="pc">
-      <div class="pc-tag">Personal</div>
+      <div class="pc-tag">制作代行</div>
       <div class="pc-name">Story<br>Starter</div>
-      <div class="pc-price">¥98,000</div>
-      <div class="pc-sub">個人・フリーランス向け</div>
+      <div class="pc-price">¥98,000〜</div>
+      <div class="pc-sub">内容が決まっている方向け</div>
       <div class="pc-subsidy">補助金活用で実質 ¥33,000〜</div>
       <div class="pc-div"></div>
       <ul class="pc-ul">
-        <li>ヒアリング60分</li><li>漫画10ページ</li><li>AI作画＋編集</li><li>高解像度データ納品</li><li>MangaX掲載（任意）</li>
-      </ul>
-    </div>
-    <div class="pc feat">
-      <div class="feat-badge">★ 法人推奨</div>
-      <div class="pc-tag">Business</div>
-      <div class="pc-name">Business<br>Standard</div>
-      <div class="pc-was">通常 ¥198,000</div>
-      <div class="pc-price">¥148,000</div>
-      <div class="pc-sub">4/30申込特別価格</div>
-      <div class="pc-subsidy">補助金活用で実質 ¥49,000〜</div>
-      <div class="pc-div"></div>
-      <ul class="pc-ul">
-        <li>ヒアリング90分</li><li>漫画10ページ</li><li>法人請求書・見積書対応</li><li>修正3回まで</li><li>1言語追加込み</li><li>SNS用画像セット</li><li>補助金申請書類サポート</li>
+        <li>ヒアリング60分</li><li>漫画10ページ</li><li>絵柄1案</li><li>修正1回</li><li>MangaX掲載</li><li>データ納品</li>
       </ul>
     </div>
     <div class="pc">
-      <div class="pc-tag">Enterprise</div>
-      <div class="pc-name">Brand<br>Package</div>
-      <div class="pc-was">通常 ¥480,000</div>
-      <div class="pc-price">¥298,000</div>
-      <div class="pc-sub">4/30申込特別価格</div>
-      <div class="pc-subsidy">補助金活用で実質 ¥99,000〜</div>
+      <div class="pc-tag">伴走型パートナー</div>
+      <div class="pc-name">Brand<br>Partner</div>
+      <div class="pc-price">¥198,000〜</div>
+      <div class="pc-sub">「何を伝えるか」から一緒に</div>
+      <div class="pc-subsidy">補助金活用で実質 ¥66,000〜</div>
       <div class="pc-div"></div>
       <ul class="pc-ul">
-        <li>ヒアリング120分＋事前調査</li><li>漫画20ページ</li><li>絵柄3案提案</li><li>2言語込み・修正無制限</li><li>展示会用印刷データ</li><li>製本1冊込み</li>
+        <li>ブランドヒアリング（ストーリー設計込み）</li><li>漫画10ページ〜</li><li>絵柄3案</li><li>修正3回</li><li>MangaX掲載</li><li>データ納品</li>
       </ul>
+    </div>
+    <div class="pc feat">
+      <div class="feat-badge">★ おすすめ</div>
+      <div class="pc-tag">伴走型パートナー</div>
+      <div class="pc-name">Brand<br>Partner Pro</div>
+      <div class="pc-price">¥500,000〜<span style="font-size:20px;color:var(--dim);">/月</span></div>
+      <div class="pc-sub">継続的にブランドを育てたい企業向け</div>
+      <div class="pc-subsidy">総額150万〜 → 補助金で実質 ¥500,000〜</div>
+      <div class="pc-div"></div>
+      <ul class="pc-ul">
+        <li>月次ミーティング</li><li>月1本〜制作</li><li>ブランド戦略設計</li><li>優先スケジュール</li><li>MangaX掲載</li><li>データ納品</li>
+      </ul>
+      <div style="margin-top:16px;font-family:var(--mono);font-size:10px;color:var(--dimmer);letter-spacing:1px;">※ 3ヶ月〜の継続契約</div>
     </div>
   </div>
   <p class="price-note rv">オプション追加・ページ数変更は <a href="options.html">オプションページ</a> をご確認ください</p>
@@ -1268,7 +1274,8 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
     <div class="rl">
       <div class="sub-kick">補助金活用ガイド</div>
       <h2 class="sub-h">小規模事業者持続化補助金で<br><em>漫画制作費を実質1/3に。</em></h2>
-      <p class="sub-p">漫画制作は「広報費」「委託・外注費」として持続化補助金の対象です。ツール登録不要。商工会議所を通じて申請するだけ。補助率2/3・上限250万円。</p>
+      <p class="sub-p">漫画制作は「広報費」「委託・外注費」として持続化補助金の対象です。ツール登録不要。商工会議所を通じて申請するだけ。補助率2/3・上限250万円。<br><br>
+      <span style="font-size:13px;">例：Story Starter ¥98,000 → 実質 ¥33,000〜 ／ Brand Partner ¥198,000 → 実質 ¥66,000〜<br>Brand Partner Pro 月50万×3ヶ月＝150万 → 補助金で実質 ¥500,000〜</span></p>
       <div class="sub-dl">
         <div class="sdl-date">4/30</div>
         <div class="sdl-info"><strong>第19回 申請受付締切</strong>2026年4月30日 17:00<br>事業支援計画書締切：4/16</div>
@@ -1371,7 +1378,11 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
       </div>
       <div class="faq-item">
         <div class="faq-q">途中でイメージが変わった場合は？</div>
-        <div class="faq-a">プランに応じた修正回数内で対応します。Business Standard以上は3回まで無料。方向性が大きく変わる場合も、まず相談してください。</div>
+        <div class="faq-a">プランに応じた修正回数内で対応します。Brand Partner以上は3回まで無料。方向性が大きく変わる場合も、まず相談してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">プランの違いは何ですか？</div>
+        <div class="faq-a">Story Starterは「制作代行」型で、内容が決まっている方向けにヒアリング＋漫画制作をお届けします。Brand Partnerは「伴走型パートナー」で、何を伝えるかの設計から一緒に行います。Brand Partner Proは3ヶ月の継続契約で、ブランド戦略設計・月次制作を含む企業向けプランです。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">漫画制作に持続化補助金は使えますか？</div>
