@@ -276,6 +276,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 56px;height:72px;d
 .nav-cta:hover::before{transform:scaleX(1);}
 .nav-cta:hover{color:var(--void);}
 .nav-cta span{position:relative;z-index:1;}
+.lang-switch{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;display:flex;gap:0;align-items:center;}
+.lang-switch a{color:var(--dimmer);text-decoration:none;padding:6px 10px;transition:color .2s;}
+.lang-switch a:hover{color:var(--white);}
+.lang-switch a.active{color:var(--cyan);text-shadow:0 0 12px rgba(0,212,255,.4);}
+.lang-switch span{color:var(--border);font-size:12px;}
 
 /* HAMBURGER */
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:600;}
@@ -1094,6 +1099,7 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
     <a href="#pricing" class="nav-link">料金</a>
     <a href="#subsidy" class="nav-link">補助金</a>
     <a href="#process" class="nav-link">制作の流れ</a>
+    <div class="lang-switch"><a href="index.html" class="active">JA</a><span>/</span><a href="en.html">EN</a></div>
     <a href="#contact" class="nav-cta"><span>無料で資料請求</span></a>
   </div>
 </nav>

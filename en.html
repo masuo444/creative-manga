@@ -276,6 +276,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 56px;height:72px;d
 .nav-cta:hover::before{transform:scaleX(1);}
 .nav-cta:hover{color:var(--void);}
 .nav-cta span{position:relative;z-index:1;}
+.lang-switch{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;display:flex;gap:0;align-items:center;}
+.lang-switch a{color:var(--dimmer);text-decoration:none;padding:6px 10px;transition:color .2s;}
+.lang-switch a:hover{color:var(--white);}
+.lang-switch a.active{color:var(--cyan);text-shadow:0 0 12px rgba(0,212,255,.4);}
+.lang-switch span{color:var(--border);font-size:12px;}
 
 /* HAMBURGER */
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:600;}
@@ -589,7 +594,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 56px;height:72px;d
 .uc:nth-child(3) .uc-img-bg{background:linear-gradient(135deg,rgba(245,200,66,.18),rgba(232,0,106,.08));}
 .uc:nth-child(4) .uc-img-bg{background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(232,0,106,.15));}
 .uc-emoji{font-size:52px;opacity:.45;position:relative;z-index:1;}
-/* 画像差し込み: .uc-img に <img src="..." style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> */
+/* image slot: add <img src="..." style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> inside .uc-img */
 .uc-body{padding:28px 24px;}
 .uc-n{font-family:var(--display);font-size:11px;letter-spacing:4px;color:var(--magenta);margin-bottom:6px;}
 .uc-cat{font-family:var(--mono);font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--dim);margin-bottom:10px;}
@@ -1094,6 +1099,7 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
     <a href="#pricing" class="nav-link">Pricing</a>
     <a href="#subsidy" class="nav-link">Subsidy</a>
     <a href="#process" class="nav-link">Process</a>
+    <div class="lang-switch"><a href="index.html">JA</a><span>/</span><a href="en.html" class="active">EN</a></div>
     <a href="#contact" class="nav-cta"><span>Free Info Request</span></a>
   </div>
 </nav>
@@ -1295,9 +1301,9 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
     <div class="pc">
       <div class="pc-tag">Production Service</div>
       <div class="pc-name">Story<br>Starter</div>
-      <div class="pc-price">¥98,000〜</div>
+      <div class="pc-price">¥98,000+</div>
       <div class="pc-sub">For those who know what they want</div>
-      <div class="pc-subsidy">With subsidy: effectively ¥33,000〜</div>
+      <div class="pc-subsidy">With subsidy: effectively ¥33,000+</div>
       <div class="pc-div"></div>
       <ul class="pc-ul">
         <li>60-min consultation</li><li>10+ page manga</li><li>MangaX publishing</li><li>Digital delivery</li>
@@ -1307,9 +1313,9 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
       <div class="feat-badge">★ Recommended</div>
       <div class="pc-tag">Strategic Partner</div>
       <div class="pc-name">Brand<br>Partner</div>
-      <div class="pc-price">¥198,000〜</div>
+      <div class="pc-price">¥198,000+</div>
       <div class="pc-sub">We co-design what to communicate</div>
-      <div class="pc-subsidy">With subsidy: effectively ¥66,000〜</div>
+      <div class="pc-subsidy">With subsidy: effectively ¥66,000+</div>
       <div class="pc-div"></div>
       <ul class="pc-ul">
         <li>Brand consultation (story design included)</li><li>10+ page manga</li><li>3 revisions</li><li>MangaX publishing</li><li>Digital delivery</li>
@@ -1318,9 +1324,9 @@ footer{background:#020209;border-top:1px solid var(--border);padding:56px;}
     <div class="pc pc-gold">
       <div class="pc-tag">Strategic Partner</div>
       <div class="pc-name">Brand<br>Partner Pro</div>
-      <div class="pc-price">¥500,000〜<span style="font-size:20px;color:var(--dim);">/mo</span></div>
+      <div class="pc-price">¥500,000+<span style="font-size:20px;color:var(--dim);">/mo</span></div>
       <div class="pc-sub">For companies building a lasting brand</div>
-      <div class="pc-subsidy">Total ¥1.5M+ → With subsidy: effectively ¥500,000〜</div>
+      <div class="pc-subsidy">Total ¥1.5M+ → With subsidy: effectively ¥500,000+</div>
       <div class="pc-div"></div>
       <ul class="pc-ul">
         <li>Monthly meetings</li><li>20+ page manga</li><li>Brand strategy design</li><li>Priority scheduling</li><li>MangaX publishing</li><li>Digital delivery</li>
